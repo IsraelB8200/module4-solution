@@ -5,6 +5,7 @@
   .component('items',{
     templateUrl: 'src/menuapp/templates/items.template.html',
     bindings: {
+      categoryName: '<',
       items: '<'
     },
   });

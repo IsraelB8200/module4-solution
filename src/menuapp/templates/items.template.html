@@ -1,8 +1,8 @@
 <div>
-  <h1>Items</h1>
+  <h1> {{ itemsCtrl.categoryName }} Items</h1>
   <ul>
-    <li ng-repeat="item in $ctrl.items">
-      {{ category.name }}
+    <li ng-repeat="item in itemsCtrl.items">
+      {{ item.name }}
     </li>
   </ul>
 </div>
