@@ -13,12 +13,10 @@
         method : "GET",
         url : (ApiBasePath + "/categories.json")
       });
-      console.log(response);
       return response;
     };
 
     service.getItemsForCategory = function (categoryShortName) {
-      console.log('getItemsForCategory was called with ', categoryShortName);
       var response = $http({
         method : "GET",
         url : (ApiBasePath + "/menu_items.json?category=" + categoryShortName)
